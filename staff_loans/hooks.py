@@ -119,6 +119,7 @@ doc_events = {
 		"on_submit": "staff_loans.custom.loan.on_salary_slip_submit",
 		"on_cancel": "staff_loans.custom.loan.cancel_jv_based_on_salary_slip_cancel",
         "before_save": "staff_loans.custom.loan.add_additional_salary_on_salary_slip",
+        "before_insert": "staff_loans.custom.loan.add_additional_salary_on_salary_slip",
 	},
 }
 
