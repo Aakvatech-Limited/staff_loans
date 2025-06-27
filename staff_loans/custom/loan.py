@@ -305,12 +305,12 @@ def add_additional_salary_on_salary_slip(doc, method):
             # frappe.msgprint("Date is {0}". format(new_checkk))
             # new_check = new_checkk.replace(day=1)
             repayment_amount = 0
-            staff_loan = frappe.get_doc("Staff Loan", loans)
+            staff_loan = frappe.get_doc("Staff Loan", loans.name)
             for d in staff_loan.repayment_schedule:
                 # frappe.msgprint("Payment Date {0}". format(d.payment_date))
                 if d.payment_date == document_date and d.total_payment > 0 and d.is_paid == 0:
                     repayment_amount = d.total_payment
-                    if not frappe.db.exists("Additional Salary", {"employee": doc.employee, "salary_component": staff_loan_salary_component, "payroll_date": doc.start_date, "docstatus": 1, "amount": repayment_amount}): 
+                    if not frappe.db.exists("Additional Salary", {"employee": doc.employee, "salary_component": staff_loan_salary_component, "payroll_date": doc.start_date, "docstatus": 1, "amount": repayment_amount, "ref_doctype": "Staff Loan", "ref_docname": loans.name}): 
                         if not d.payment_reference:
                             # If it doesn't exist, create a new Additional Salary
                             new_additional_salary = frappe.new_doc("Additional Salary")
@@ -321,6 +321,8 @@ def add_additional_salary_on_salary_slip(doc, method):
                             new_additional_salary.amount = repayment_amount
                             new_additional_salary.payroll_date = doc.start_date
                             new_additional_salary.overwrite_salary_structure_amount = 0
+                            new_additional_salary.ref_doctype = "Staff Loan"
+                            new_additional_salary.ref_docname = loans.name
                             new_additional_salary.insert()
                             new_additional_salary.submit()
                             d.payment_reference = new_additional_salary.name
