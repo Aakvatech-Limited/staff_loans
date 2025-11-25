@@ -152,7 +152,8 @@ def get_staff_loans(employee):
 @frappe.whitelist()
 def cancel_jv_based_on_salary_slip_cancel(doc, method):
     get_jv_based_on_salary_slip = frappe.db.get_list("Journal Entry",{
-        "cheque_no": doc.name
+        "cheque_no": doc.name,
+        "docstatus": 1
     },["name"])
     if len(get_jv_based_on_salary_slip) > 0:
         for jv in get_jv_based_on_salary_slip:
