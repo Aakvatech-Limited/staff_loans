@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2025-12-19 10:22:30.856949",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "credit_account",
+  "jv_posting_date_based_on",
+  "column_break_kaf9v",
+  "staff_loan_component",
+  "debit_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "credit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Credit Account (Staff Loan)",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_kaf9v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "staff_loan_component",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staff Loan Component",
+   "options": "Salary Component",
+   "reqd": 1
+  },
+  {
+   "fieldname": "debit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Debit Account (Staff Loan Receivable)",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "default": "End Date of Salary Slip",
+   "fieldname": "jv_posting_date_based_on",
+   "fieldtype": "Select",
+   "label": "Accrual JV Posting Date Based on",
+   "options": "Start Date of Salary Slip\nEnd Date of Salary Slip",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-19 10:22:30.856949",
+ "modified_by": "ibrahim@vvsdtz.com",
+ "module": "Staff Loan Management",
+ "name": "Staff Loan Company Setting",
+ "naming_rule": "By fieldname",
+ "owner": "ibrahim@vvsdtz.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "System Manager",
+   "select": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
