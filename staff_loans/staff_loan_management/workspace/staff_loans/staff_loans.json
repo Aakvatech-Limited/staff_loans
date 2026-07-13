@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"b46vufFEwe\",\"type\":\"card\",\"data\":{\"card_name\":\"Staff Loans\",\"col\":4}},{\"id\":\"hjPGhaUCM4\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "content": "[{\"id\":\"vOTBpPP4nm\",\"type\":\"card\",\"data\":{\"card_name\":\"Masters\",\"col\":4}},{\"id\":\"b46vufFEwe\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}},{\"id\":\"hjPGhaUCM4\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}}]",
  "creation": "2023-03-07 10:10:30.194059",
  "custom_blocks": [],
  "docstatus": 0,
@@ -15,31 +15,11 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Staff Loans",
-   "link_count": 5,
+   "label": "Transactions",
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Staff Loan Type",
-   "link_count": 0,
-   "link_to": "Staff Loan Type",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Staff Loan Application",
-   "link_count": 0,
-   "link_to": "Staff Loan Application",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   },
   {
    "hidden": 0,
@@ -64,17 +44,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Staff Loan Settings",
-   "link_count": 0,
-   "link_to": "Staff Loan Settings",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Report",
+   "label": "Reports",
    "link_count": 3,
    "link_type": "DocType",
    "onboard": 0,
@@ -109,10 +79,59 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Staff Loan Application",
+   "link_count": 0,
+   "link_to": "Staff Loan Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Staff Loan Type",
+   "link_count": 0,
+   "link_to": "Staff Loan Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Staff Loan Settings",
+   "link_count": 0,
+   "link_to": "Staff Loan Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Staff Loan Company Setting",
+   "link_count": 0,
+   "link_to": "Staff Loan Company Setting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-03-21 10:40:34.549189",
- "modified_by": "Administrator",
+ "modified": "2026-07-13 10:36:45.544732",
+ "modified_by": "ibrahim@vvsdtz.com",
  "module": "Staff Loan Management",
  "name": "Staff Loans",
  "number_cards": [],
